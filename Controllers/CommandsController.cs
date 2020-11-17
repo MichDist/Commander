@@ -14,7 +14,7 @@ namespace Commander.Controllers
     public class CommandsController : ControllerBase
     {
         private readonly MockCommanderRepo _repository = new MockCommanderRepo();
-        
+        // TEST
         // GET api/commands
         [HttpGet]
         public ActionResult <IEnumerable<Command>> GetAllCommands()
