@@ -32,7 +32,7 @@ namespace Commander.Controllers
         {
             var commandItems = _repository.GetAllCommands();
 
-            return Ok(_mapper.Map<CommandReadDto>(commandItems));
+            return Ok(_mapper.Map<IEnumerable<CommandReadDto>>(commandItems));
         }   
 
         // GET api/commands/{id}
