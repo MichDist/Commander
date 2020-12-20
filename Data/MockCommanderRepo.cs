@@ -9,7 +9,7 @@ namespace Commander.Data
     // Hard coded data for testing
     public class MockCommanderRepo : ICommanderRepo
     {
-        public IEnumerable<Command> GetAppCommands()
+        public IEnumerable<Command> GetAllCommands()
         {
             var commands = new List<Command>
             {
