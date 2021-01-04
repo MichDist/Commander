@@ -9,6 +9,11 @@ namespace Commander.Data
     // Hard coded data for testing
     public class MockCommanderRepo : ICommanderRepo
     {
+        public void DeleteCommand(Command cmd)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Command> GetAllCommands()
         {
             var commands = new List<Command>
